@@ -6,13 +6,13 @@ With Raspberry Pi you are able to write programs that take effect in the world o
 
 A Raspberry Pi is a small computer that we can use to create exciting technology. It was created in the UK by the Raspberry Pi Foundation to help young people like you learn how to code.
 
-This small computer features amazing HD (high-definition) quality video and playback, sports high quality audio and has the ability to play 3D games. 
+This small computer features amazing HD (high-definition) quality video and playback, sports high quality audio, and has the ability to play 3D games. 
 
 To get going with your Raspberry Pi, you will need to connect cables and add an SD card before logging in.
 
-## Step 0: Setting Up your Pi
+## Step 0: Setting up your Pi
 
-First check that you have all the parts you need to get your Raspberry Pi set up and working:
+First check that you have all the parts you need to get your Raspberry Pi set up and working.
 
 - Raspberry Pi
 - Micro USB power adaptor
@@ -23,7 +23,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 - A monitor or TV
 - Some headphones 
 
-###Activity Checklist:
+###Activity checklist:
 
 1.	Place the SD card into the slot of your Raspberry Pi. It will only fit one way so be careful not to break the card. 
 
@@ -52,7 +52,7 @@ First check that you have all the parts you need to get your Raspberry Pi set up
 	tar xzf mcpi.tar.gz
 	```
 	
-	*Note: You will require an internet connection to be able to download and install the files.*
+	**Note: You will require an internet connection to be able to download and install the files.**
 
 ## Step 1: Post a message to Minecraft Pi
 
@@ -60,7 +60,7 @@ We are going to have some fun with Minecraft Pi and the chat window.
 
 To begin, you will need to be able to write Python code into a text editor. For this you can use the text editor nano in a terminal window.
 
-###Activity Checklist:
+###Activity checklist:
 
 1.	Begin by opening LXTerminal, and running Minecraft Pi if it is not already running, by typing the following lines:
 
@@ -108,12 +108,12 @@ To begin, you will need to be able to write Python code into a text editor. For 
 10.	To run your program in the LXTerminal window type `python chat.py`.
 
 
-## Step 2: Finding a Player's Location
+## Step 2: Finding a player's location
 
 Your Minecraft Pi Python program is beginning to take shape! Now you are going to add some code to locate where the player is in the Minecraft world.
 
 
-###Activity Checklist:
+###Activity checklist:
 
 1.	Open chat.py in a text editor like nano. You can do this from an LXTerminal window by navigating to the correct folder like this:
 
@@ -150,13 +150,13 @@ Your Minecraft Pi Python program is beginning to take shape! Now you are going t
 	
 	`mc.player.getPos()` will return the player's location in the Minecraft world. This information is then stored in the variable ```pos``` so that you can send that information to the chat window in Minecraft in the line `mc.postToChat(posTemplate.format(pos.x, pos.y, pos.z))`.
 
-## Step 3: Drop Flower Blocks
+## Step 3: Drop flower blocks
 
 So far you have located your player's position and posted information to the chat window. Now you will write some Python code to drop flower blocks.
 
 To do this we can create a loop that checks the player's location, and sets a flower block at that player's position every 0.1 of a second.
 
-###Activity Checklist:
+###Activity checklist:
 
 1.	Create a new Python file by typing `nano flowers.py` in an LXTerminal window. 
 
